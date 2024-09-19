@@ -1,2 +1,2 @@
 # COP_3363
-intro to programming C++ using UNIX
+intro to C++ programming using UNIX
