@@ -5,12 +5,8 @@ using namespace std;
 
 int main() {
 
-    double weight_lbs;
-    int height_feet;
-    int height_inches;
-    double weight_kgs;
-    double height_meters;
-    double bmi;
+    double weight_lbs, weight_kgs, height_meters, bmi;
+    int height_feet, height_inches;
     const double  MIN_BMI = 18.5;
     const double  MAX_BMI = 24.9;
 
@@ -28,10 +24,11 @@ int main() {
     height_inches += height_feet * 12;
     height_meters = height_inches * 0.0254;
     double height_sqrd = pow(height_meters,2);
+
     bmi = weight_kgs/height_sqrd;
     
     double min_weight = (MIN_BMI * height_sqrd)/0.4536;
-    double max_weight = ( MAX_BMI * height_sqrd)/0.4536;
+    double max_weight = (MAX_BMI * height_sqrd)/0.4536;
     
     cout << fixed << setprecision(2);
     cout << "Your height in meters is " << height_meters << " m." << endl;
