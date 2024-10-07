@@ -1,0 +1,62 @@
+HOMEWORK 2
+
+QUESTION 1:
+	-Initialize variables
+		-initialize count
+		-initialize lb & ub
+	-While-loop until user's input is valid
+		-Prompt the user to enter left side of range (lb - inclusive)
+		-Prompt the user to enter right side of range (up - exclusive)
+		-Validate user's input; make sure 0 < lb < ub
+	-Find all print numbers within the given range.
+		-Use nested for-loop to iterate within range
+		-Use modulo operator to find all non-prime numbers
+		-Count++ for every prime number found
+		-Print prime number when found
+	-Print count after loop ends.
+
+QUESTION 2:
+	-Import cmath library
+	-Initialize lb & ub;
+	-While-loop until user's input is valid
+		-Prompt the user for left side of range (inclusive)
+		-Prompt the user for right side of range (exclusive)
+		-Validate user's input; make sure 0 <= lb < ub
+	-Find all armstrong numbers
+		-iterate using for-loop through all numbers between bounds
+		-for each iteration determine the number of digits
+			-divide by 10 to separate and stored each individual digit
+		-find the sum of digits raised to the number of digits
+		-check if sum matches original number
+	-Print all Armstrong numbers within range.
+
+BONUS QUESTION #2:
+
+	declare number of steps (n) variable for random walk
+	declare number of trials (t) variable to repeat random walk
+
+	prompt user to enter n value
+	prompt user to enter t value
+	
+	random device
+	random seed
+	uniform distribution <integer> [0,4)
+	
+	repeat for t number of trials {
+		random number = gen random number
+		
+		switch (random):
+			case 0:
+				x--;
+			case 1:
+				x++;
+			case 2:
+				y--;
+			case 3:
+				y++;
+		
+		compute euclidean distance (c) from the origin after each trials
+	}
+
+	compute averaged euclidean distance after t number of trials
+	output result
