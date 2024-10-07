@@ -1,6 +1,6 @@
 HOMEWORK 2
 
-QUESTION 1:
+QUESTION 1 (Finding prime numbers within range):
 	-Initialize variables
 		-initialize count
 		-initialize lb & ub
@@ -15,7 +15,7 @@ QUESTION 1:
 		-Print prime number when found
 	-Print count after loop ends.
 
-QUESTION 2:
+QUESTION 2 (Finding armstrong numbers within range):
 	-Import cmath library
 	-Initialize lb & ub;
 	-While-loop until user's input is valid
@@ -30,7 +30,7 @@ QUESTION 2:
 		-check if sum matches original number
 	-Print all Armstrong numbers within range.
 
-BONUS QUESTION #2:
+BONUS QUESTION #2 (Random 2D Walk):
 
 	declare number of steps (n) variable for random walk
 	declare number of trials (t) variable to repeat random walk
