@@ -43,18 +43,20 @@ BONUS QUESTION #2 (Random 2D Walk):
 	uniform distribution <integer> [0,4)
 	
 	repeat for t number of trials {
-		random number = gen random number
-		
-		switch (random):
-			case 0:
-				x--;
-			case 1:
-				x++;
-			case 2:
-				y--;
-			case 3:
-				y++;
-		
+		repeat for n number of steps {
+			random number = gen random number
+			init x,y at 0
+
+			switch (random):
+				case 1:
+					x--;
+				case 2:
+					x++;
+				case 3:
+					y--;
+				case 4:
+					y++;
+		}
 		compute euclidean distance (c) from the origin after each trials
 	}
 
