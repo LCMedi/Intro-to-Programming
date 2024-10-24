@@ -1,0 +1,176 @@
+					HOMEWORK 2
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+QUESTION 1:
+
+declare vars (k,e)
+
+prompt funciton {
+
+	while(true) 
+	
+		prompt user
+		take input k
+		
+		if(k<=0)
+			print error
+			continue
+		else break
+	
+	return k
+}
+
+factorialCalculator function (int order) {
+	double result = 0
+	while(order>0)
+		result *= order
+		order--
+	return result
+}
+
+eCalculator function(int k) {
+	double num = 1
+	double den
+	for i<k, i++ 
+		den = factorialCalculator(i)
+		e += num/den	
+	return e
+}
+
+print out approximated e value
+
+----------------------------------------------------------------------
+
+QUESTION 2:
+
+declare vars
+
+prompt funciton {
+
+	while(true) 
+	
+		prompt user
+		take input k
+		
+		if(k<=0)
+			print error
+			continue
+		else break
+	
+	return k
+}
+
+int fibonacciFunction(int n) {
+	if n > 2
+		return function(n-1) + function(n-2)
+	else if n = 1
+		return 1
+	else if n = 0
+		return 0;
+}
+
+void printSequence function (int n) {
+	for i<=n {
+		if n == 0 || i == n
+			print fibonacciFunction(i)
+		else
+			print fibonacciFunction(i) + " ,"
+	}
+}
+
+---------------------------------------------------------------------------------------------
+
+QUESTION 3:
+
+declare num1 and num2
+
+prompt user to enter two integers (num1, num2)
+validate that inputs are positive (num1 > 0 && num2 > 0)
+prompt funciton {
+	while(true) 
+		prompt user
+		take input num1 and num2
+		
+		if(num1 <= 0 || num2 <= 0)
+			print error
+			continue
+		else break
+	return num1 and num2
+}
+
+int gcdFunction(int a, int b) {
+	*USE EUCLIDEAN ALGORITHM*
+	while (b != 0)
+		int remainder = a%b
+		a = b
+		b = remainder
+	return a
+}
+
+LCM function{int a, int b) {
+	int result = (a * b) / gcdFunction(a, b)
+	return result
+}
+	
+print gcd
+print lcm
+
+------------------------------------------------------------------------------
+
+QUESTION 4
+
+declare vars
+
+prompt function
+
+
+calculate factorial function
+
+calculate binomial coefficient function
+
+function printPascal(int rows) {
+	for i=1  i<=rows
+		for ws = 0 ws < rows - i
+			print " "
+		for j=1 j<=i
+			print function binomialCoefficient()
+		print endl
+}
+
+call functions
+
+-------------------------------------------------------------------------------
+
+BONUS QUESTION 1
+
+declare vars
+	const double e = 2.718281828
+	int value
+	int down_payment
+	int principle = value - down_payment
+	int num_payments
+	double mon_payment
+
+get value function
+
+get down_payment function
+
+get num_payments function
+
+get mon_payment function
+
+double calculateF function (double r, int p = principle, int n = num_payments, int m = mon_payment) {
+	doubl num = p * r * pow(1 + r, n)
+	double den = pow(1+r, n) - 1
+	return num/den - M;
+
+double calculateApr function(double a = 1e-9, double b = 1) {
+	double c = (a+b)/2
+	if (|a-b| > 1e - 9) return c //base case
+	else if calculateF(c) == 0 return c
+	else if calculateF(c) * calculateF(a) < 0 //recursive case 1
+		return calculateApr(a, c)
+	else if calculateF(c) * calculateF(b) < 0 //recursive case 2
+		return calculateApr(c, b)
+	else // error case
+		return -1
+}
