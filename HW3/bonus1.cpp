@@ -23,16 +23,18 @@ double calculateApr(double a = 1e-9, double b = 1.0, int maxIters = 10000) {
         c = (a+b)/2; // Calculate midpoint
 
         if (fabs(calculateF(c)) < 1e-9) { // Check if c is the root
-            return c * 100;
-        } else if (calculateF(c) * calculateF(a) < 0) {
+            return c * 12 * 100;
+        }
+        if (calculateF(c) * calculateF(a) < 0) {
             b = c;
-        } else {
+        }
+        if (calculateF(c) * calculateF(a) < 0) {
             a = c;
         }
         iters++;
     }
 
-    return c * 100;
+    return c * 12 * 100;
 }
 
 int main() {
